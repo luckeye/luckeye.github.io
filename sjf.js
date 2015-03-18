@@ -7265,10 +7265,10 @@ var $$ = Object.create(null);
     t1 = noenough_view.style;
     J.getInterceptor$x(t1).set$display(t1, "flex");
     C.CssStyleDeclaration_methods.set$flexFlow(t1, "column");
-    C.CssStyleDeclaration_methods.set$flex(t1, "5");
+    C.CssStyleDeclaration_methods.set$flex(t1, "6");
     t1 = J.get$onClick$x(noenough_view);
     H.setRuntimeTypeInfo(new W._EventStreamSubscription(0, t1._target, t1._eventType, W._wrapZone(B.onGet$closure()), t1._useCapture), [H.getTypeArgumentByIndex(t1, 0)])._tryResume$0();
-    for (count = 0, i = 0; i < 5; ++i) {
+    for (count = 0, i = 0; i < 6; ++i) {
       line = document.createElement("div", null);
       t1 = line.style;
       J.getInterceptor$x(t1).set$display(t1, "flex");
@@ -7437,8 +7437,13 @@ var $$ = Object.create(null);
           t2 = J.getInterceptor(column_str);
           if (!t2.$eq(column_str, "-")) {
             pos = t2.indexOf$1(column_str, ".");
-            group_name = t2.substring$2(column_str, 0, pos);
-            product_name = C.JSString_methods.substring$1(column_str, pos + 1);
+            if (pos !== -1) {
+              group_name = t2.substring$2(column_str, 0, pos);
+              product_name = C.JSString_methods.substring$1(column_str, pos + 1);
+            } else {
+              group_name = "";
+              product_name = "";
+            }
           } else {
             group_name = "";
             product_name = "";
@@ -7458,7 +7463,7 @@ var $$ = Object.create(null);
           if (products != null) {
             info = J.$index$asx(products, product_name);
             if (info == null)
-              window.alert(column_str);
+              text.textContent = "";
             else
               product_info = info;
           } else
@@ -7598,8 +7603,13 @@ var $$ = Object.create(null);
           t2 = J.getInterceptor(column_str);
           if (!t2.$eq(column_str, "-")) {
             pos = t2.indexOf$1(column_str, ".");
-            group_name = t2.substring$2(column_str, 0, pos);
-            product_name = C.JSString_methods.substring$1(column_str, pos + 1);
+            if (pos !== -1) {
+              group_name = t2.substring$2(column_str, 0, pos);
+              product_name = C.JSString_methods.substring$1(column_str, pos + 1);
+            } else {
+              group_name = "";
+              product_name = "";
+            }
           } else {
             group_name = "";
             product_name = "";
@@ -7620,7 +7630,7 @@ var $$ = Object.create(null);
             if (info != null)
               product_info = info;
             else
-              window.alert(column_str);
+              text.textContent = "";
           } else
             window.alert(group_name);
           if (!J.$eq(product_info, $.default_product_info))
