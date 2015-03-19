@@ -7435,7 +7435,7 @@ var $$ = Object.create(null);
           C.CssStyleDeclaration_methods.set$whiteSpace(t2, "normal");
           C.CssStyleDeclaration_methods.set$verticalAlign(t2, "top");
           t2 = J.getInterceptor(column_str);
-          if (!t2.$eq(column_str, "-")) {
+          if (!t2.$eq(column_str, "-") && t2.substring$2(column_str, 0, 0) !== ".") {
             pos = t2.indexOf$1(column_str, ".");
             if (pos !== -1) {
               group_name = t2.substring$2(column_str, 0, pos);
@@ -7462,9 +7462,10 @@ var $$ = Object.create(null);
           products = $.groups_products.$index(0, group_name);
           if (products != null) {
             info = J.$index$asx(products, product_name);
-            if (info == null)
+            if (info == null) {
               text.textContent = "";
-            else
+              window.alert(product_name);
+            } else
               product_info = info;
           } else
             window.alert(group_name);
@@ -7601,7 +7602,7 @@ var $$ = Object.create(null);
           C.CssStyleDeclaration_methods.set$whiteSpace(t2, "normal");
           C.CssStyleDeclaration_methods.set$verticalAlign(t2, "middle");
           t2 = J.getInterceptor(column_str);
-          if (!t2.$eq(column_str, "-")) {
+          if (!t2.$eq(column_str, "-") && t2.substring$2(column_str, 0, 0) !== ".") {
             pos = t2.indexOf$1(column_str, ".");
             if (pos !== -1) {
               group_name = t2.substring$2(column_str, 0, pos);
