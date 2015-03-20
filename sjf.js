@@ -7734,9 +7734,15 @@ var $$ = Object.create(null);
           if (5 >= strs.length)
             return H.ioore(strs, 5);
           product_info.label = strs[5];
-          products.$indexSet(0, product_name, product_info);
+          if (products.containsKey$1(0, product_name))
+            window.alert(C.JSString_methods.$add(group_name + ".", product_name));
+          else
+            products.$indexSet(0, product_name, product_info);
         }
-        groups_products.$indexSet(0, group_name, products);
+        if (groups_products.containsKey$1(0, group_name))
+          window.alert(group_name);
+        else
+          groups_products.$indexSet(0, group_name, products);
       }
     }
   },
