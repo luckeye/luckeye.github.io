@@ -7120,7 +7120,7 @@ var $$ = Object.create(null);
     H.setRuntimeTypeInfo(new W._EventStreamSubscription(0, t1._target, t1._eventType, W._wrapZone(B.onBack$closure()), t1._useCapture), [H.getTypeArgumentByIndex(t1, 0)])._tryResume$0();
   }, "call$0", "main$closure", 0, 0, 2],
   gen_groups_products_view: function() {
-    var t1, l, count, columns_count, cur, i, row_e, j, cell;
+    var t1, l, count, rows_count, cur, i, row_e, j, cell;
     t1 = document.createElement("div", null);
     $.groups_view = t1;
     t1 = J.get$onClick$x(t1);
@@ -7132,14 +7132,15 @@ var $$ = Object.create(null);
     t1.toString;
     l = H.setRuntimeTypeInfo(new P.LinkedHashMapKeyIterable(t1), [H.getTypeArgumentByIndex(t1, 0)]);
     count = l._map._collection$_length;
-    columns_count = C.JSInt_methods._tdivFast$1(count - 1, 7) + 1;
-    for (cur = 0, i = 0; i < 7; ++i) {
+    rows_count = C.JSInt_methods._tdivFast$1(count - 1, 10) + 1;
+    for (cur = 0, i = 0; i < rows_count; ++i) {
       row_e = document.createElement("div", null);
       J.set$whiteSpace$x(row_e.style, "nowrap");
-      for (j = 0; j < columns_count; ++j) {
+      J.set$display$x(row_e.style, "flex");
+      for (j = 0; j < 10; ++j) {
         cell = document.createElement("button", null);
         t1 = cell.style;
-        J.getInterceptor$x(t1).set$width(t1, "3.4em");
+        J.getInterceptor$x(t1).set$flex(t1, "1");
         C.CssStyleDeclaration_methods.set$height(t1, "5.9em");
         C.CssStyleDeclaration_methods.set$whiteSpace(t1, "normal");
         C.CssStyleDeclaration_methods.set$verticalAlign(t1, "middle");
@@ -7464,7 +7465,7 @@ var $$ = Object.create(null);
             info = J.$index$asx(products, product_name);
             if (info == null) {
               text.textContent = "";
-              window.alert(product_name);
+              window.alert(group_name + "." + product_name);
             } else
               product_info = info;
           } else
@@ -7491,7 +7492,8 @@ var $$ = Object.create(null);
                 $.store_num2 = t2 + set;
                 num2 += set;
               }
-            }
+            } else
+              window.alert(group_name + "." + product_name);
           if (column > 0) {
             t10 = column_e.getAttribute("group_name");
             result = row_e.lastChild;
@@ -7630,8 +7632,10 @@ var $$ = Object.create(null);
             info = J.$index$asx(products, product_name);
             if (info != null)
               product_info = info;
-            else
+            else {
+              window.alert(group_name + "." + product_name);
               text.textContent = "";
+            }
           } else
             window.alert(group_name);
           if (!J.$eq(product_info, $.default_product_info))
@@ -7657,7 +7661,8 @@ var $$ = Object.create(null);
                 $.depot_num2 = t2 + set;
                 num2 += set;
               }
-            }
+            } else
+              window.alert(group_name + "." + product_name);
           if (column > 0) {
             t10 = column_e.getAttribute("group_name");
             result = row_e.lastChild;
@@ -9242,7 +9247,7 @@ var $$ = Object.create(null);
   gen_groups_products_view_closure: {
     "^": "Closure:9;",
     call$2: function(group_name, group_products) {
-      var group_products_view, t1, l, t2, count, columns_count, cur, i, row_e, j, cell, t3, product_name, text, span1, span2, product_info, remain;
+      var group_products_view, t1, l, t2, count, rows_count, cur, i, row_e, j, cell, t3, product_name, text, span1, span2, product_info, remain;
       group_products_view = document.createElement("div", null);
       group_products_view.className = "top";
       J.set$overflow$x(group_products_view.style, "scroll");
@@ -9250,14 +9255,15 @@ var $$ = Object.create(null);
       l = t1.get$keys(group_products);
       t2 = J.getInterceptor$asx(l);
       count = t2.get$length(l);
-      columns_count = C.JSInt_methods._tdivFast$1(count - 1, 7) + 1;
-      for (cur = 0, i = 0; i < 7; ++i) {
+      rows_count = C.JSInt_methods._tdivFast$1(count - 1, 10) + 1;
+      for (cur = 0, i = 0; i < rows_count; ++i) {
         row_e = document.createElement("div", null);
         J.set$whiteSpace$x(row_e.style, "nowrap");
-        for (j = 0; j < columns_count; ++j) {
+        J.set$display$x(row_e.style, "flex");
+        for (j = 0; j < 10; ++j) {
           cell = document.createElement("button", null);
           t3 = cell.style;
-          J.getInterceptor$x(t3).set$width(t3, "3.4em");
+          J.getInterceptor$x(t3).set$flex(t3, "1");
           C.CssStyleDeclaration_methods.set$height(t3, "5.9em");
           C.CssStyleDeclaration_methods.set$whiteSpace(t3, "normal");
           C.CssStyleDeclaration_methods.set$verticalAlign(t3, "middle");
