@@ -8788,10 +8788,13 @@ var $$ = Object.create(null);
     }
   },
   set_view_set2: function(e, n) {
-    var t1, t2;
+    var t1, t, t2;
     t1 = J.getInterceptor(n);
+    t = t1.toString$0(n);
+    if (J.$eq($.product_name, ""))
+      t = "";
     t2 = J.getInterceptor$x(e);
-    t2.set$text(e, t1.toString$0(n));
+    t2.set$text(e, t);
     if (t1.$eq(n, 0)) {
       t2.get$classes(e).remove$1(0, "set");
       t2.get$classes(e).add$1(0, "set_not");
@@ -9445,10 +9448,11 @@ var $$ = Object.create(null);
       B.find_depot_area_product_display();
       $.group_product_display_view = $.product_info.get$group();
       B.find_group();
-      if ($.depot_area_product_display_view == null) {
-        B.set_product_set("0", -1);
-        B.set_product_remain("0");
-      }
+      if ($.depot_area_product_display_view == null)
+        if (!J.$eq($.product_name, "")) {
+          B.set_product_set("0", -1);
+          B.set_product_remain("0");
+        }
     }
   }
 },
