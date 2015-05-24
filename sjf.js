@@ -4468,8 +4468,8 @@ for(y=p>0,o=0;o<b;++o){if(o>=c.length)return H.e(c,o)
 a=c[o]
 a0=document.createElement("button",null)
 a1=a0.style
-J.R(a1).sN(a1,"4.5em")
-C.rd.sfg(a1,"5.9em")
+J.R(a1).sN(a1,"4.2em")
+C.rd.sfg(a1,"6.2em")
 C.rd.sNV(a1,"normal")
 C.rd.sU3(a1,"top")
 a1=J.t(a)
