@@ -4096,7 +4096,7 @@ $.ix=z
 z=J.Vg(z)
 H.J(new W.xC(0,z.Q,z.a,W.VF(F.mh()),z.b),[H.Kp(z,0)]).Y()
 $.e3.aN(0,new F.kg())},
-Kr:function(){var z,y,x,w,v,u,t,s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0
+Kr:function(){var z,y,x,w,v,u,t,s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a
 z=document.createElement("div",null)
 $.ey=z
 z.className="top"
@@ -4229,30 +4229,24 @@ z=J.Vg(c)
 H.J(new W.xC(0,z.Q,z.a,W.VF(F.De()),z.b),[H.Kp(z,0)]).Y()
 g.appendChild(c)
 b=document.createElement("button",null)
-b.textContent="\u5168\u52a0"
+b.textContent="\u52a0"
 J.j1(b.style,"1")
 z=J.Vg(b)
-H.J(new W.xC(0,z.Q,z.a,W.VF(F.lu()),z.b),[H.Kp(z,0)]).Y()
-g.appendChild(c)
+H.J(new W.xC(0,z.Q,z.a,W.VF(F.Mp()),z.b),[H.Kp(z,0)]).Y()
+g.appendChild(b)
 a=document.createElement("button",null)
-a.textContent="\u52a0"
+a.textContent="\u52a0\u7b7e"
 J.j1(a.style,"1")
 z=J.Vg(a)
-H.J(new W.xC(0,z.Q,z.a,W.VF(F.Mp()),z.b),[H.Kp(z,0)]).Y()
-g.appendChild(a)
-a0=document.createElement("button",null)
-a0.textContent="\u52a0\u7b7e"
-J.j1(a0.style,"1")
-z=J.Vg(a0)
 H.J(new W.xC(0,z.Q,z.a,W.VF(F.HJ()),z.b),[H.Kp(z,0)]).Y()
-g.appendChild(a0)
+g.appendChild(a)
 $.ey.appendChild(y)
 $.ey.appendChild(x)
 $.ey.appendChild(r)
 $.ey.appendChild(q)
 $.ey.appendChild(p)
 $.ey.appendChild(g)},
-z3:function(){var z,y,x,w,v,u,t,s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2
+z3:function(){var z,y,x,w,v,u,t,s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1
 z=document.createElement("div",null)
 $.AL=z
 z.className="top"
@@ -4390,23 +4384,17 @@ z=J.Vg(a)
 H.J(new W.xC(0,z.Q,z.a,W.VF(F.De()),z.b),[H.Kp(z,0)]).Y()
 g.appendChild(a)
 a0=document.createElement("button",null)
-a0.textContent="\u5168\u52a0"
+a0.textContent="\u52a0"
 J.j1(a0.style,"1")
 z=J.Vg(a0)
-H.J(new W.xC(0,z.Q,z.a,W.VF(F.lu()),z.b),[H.Kp(z,0)]).Y()
-g.appendChild(a)
+H.J(new W.xC(0,z.Q,z.a,W.VF(F.Mp()),z.b),[H.Kp(z,0)]).Y()
+g.appendChild(a0)
 a1=document.createElement("button",null)
-a1.textContent="\u52a0"
+a1.textContent="\u52a0\u7b7e"
 J.j1(a1.style,"1")
 z=J.Vg(a1)
-H.J(new W.xC(0,z.Q,z.a,W.VF(F.Mp()),z.b),[H.Kp(z,0)]).Y()
-g.appendChild(a1)
-a2=document.createElement("button",null)
-a2.textContent="\u52a0\u7b7e"
-J.j1(a2.style,"1")
-z=J.Vg(a2)
 H.J(new W.xC(0,z.Q,z.a,W.VF(F.HJ()),z.b),[H.Kp(z,0)]).Y()
-g.appendChild(a2)
+g.appendChild(a1)
 $.AL.appendChild(y)
 $.AL.appendChild(x)
 $.AL.appendChild(r)
@@ -4480,7 +4468,7 @@ for(y=p>0,o=0;o<b;++o){if(o>=c.length)return H.e(c,o)
 a=c[o]
 a0=document.createElement("button",null)
 a1=a0.style
-J.R(a1).sN(a1,"3.4em")
+J.R(a1).sN(a1,"3.5em")
 C.rd.sfg(a1,"5.9em")
 C.rd.sNV(a1,"normal")
 C.rd.sU3(a1,"top")
@@ -4593,7 +4581,7 @@ for(y=p>0,o=0;o<b;++o){if(o>=c.length)return H.e(c,o)
 a=c[o]
 a0=document.createElement("button",null)
 a1=a0.style
-J.R(a1).sN(a1,"3.4em")
+J.R(a1).sN(a1,"3.5em")
 C.rd.sfg(a1,"5.9em")
 C.rd.sNV(a1,"normal")
 C.rd.sU3(a1,"middle")
@@ -5294,56 +5282,58 @@ if(!J.mG(b,-1))$.N2.sdv(b)},
 tH:function(a,b){var z,y,x,w,v,u,t,s,r,q,p
 if(a==="")a=$.N2.gti()
 if(J.mG(b,-1))b=$.N2.gdv()
-z=$.N2.gti()
-y=$.N2.gdv()
-x=J.mG(z,"0")?0:y
-w=J.aF(J.mG(a,"0")?0:b,x)
-v=J.aF(b,y)
-u=$.cq
-if(u!=null)F.zL(u,a,b)
-u=$.Bh
-if(u!=null)F.zL(u,a,b)
-u=$.OR
-if(u!=null)F.zL(u,a,b)
+z=J.rh($.N2.gGq(),"span")
+y=J.nJ(z.Zv(z,0))
+z=J.rh($.N2.gGq(),"span")
+x=H.BU(J.nJ(z.Zv(z,1)),null,null)
+w=y==="0"?0:x
+v=J.aF(J.mG(a,"0")?0:b,w)
+u=J.aF(b,x)
+z=$.cq
+if(z!=null)F.zL(z,a,b)
+z=$.Bh
+if(z!=null)F.zL(z,a,b)
+z=$.OR
+if(z!=null)F.zL(z,a,b)
 if($.cq!=null){t=new W.wz($.kB.querySelectorAll("span"))
 s=t.Zv(t,0)
 r=t.Zv(t,1)
-u=J.R(s)
-q=H.BU(u.ga4(s),null,null)
+z=J.R(s)
+q=H.BU(z.ga4(s),null,null)
 p=H.BU(J.nJ(r),null,null)
-u.sa4(s,J.Lz(J.WB(q,v)))
-F.hr(r,J.WB(p,w))
-u=$.Sy
-if(typeof u!=="number")return u.g()
+z.sa4(s,J.Lz(J.WB(q,u)))
+F.hr(r,J.WB(p,v))
+z=$.Sy
+if(typeof z!=="number")return z.g()
+if(typeof u!=="number")return H.o(u)
+z+=u
+$.Sy=z
+$.W.textContent=C.CD.X(z)
+z=$.tS
+if(typeof z!=="number")return z.g()
 if(typeof v!=="number")return H.o(v)
-u+=v
-$.Sy=u
-$.W.textContent=C.CD.X(u)
-u=$.tS
-if(typeof u!=="number")return u.g()
-if(typeof w!=="number")return H.o(w)
-u+=w
-$.tS=u
-F.Uk($.Ah,u)}if($.Bh!=null){t=new W.wz($.mH.querySelectorAll("span"))
+z+=v
+$.tS=z
+F.Uk($.Ah,z)}if($.Bh!=null){t=new W.wz($.mH.querySelectorAll("span"))
 s=t.Zv(t,0)
 r=t.Zv(t,1)
-u=J.R(s)
-q=H.BU(u.ga4(s),null,null)
+z=J.R(s)
+q=H.BU(z.ga4(s),null,null)
 p=H.BU(J.nJ(r),null,null)
-u.sa4(s,J.Lz(J.WB(q,v)))
-F.hr(r,J.WB(p,w))
-u=$.X9
-if(typeof u!=="number")return u.g()
+z.sa4(s,J.Lz(J.WB(q,u)))
+F.hr(r,J.WB(p,v))
+z=$.X9
+if(typeof z!=="number")return z.g()
+if(typeof u!=="number")return H.o(u)
+z+=u
+$.X9=z
+$.pC.textContent=C.CD.X(z)
+z=$.Cy
+if(typeof z!=="number")return z.g()
 if(typeof v!=="number")return H.o(v)
-u+=v
-$.X9=u
-$.pC.textContent=C.CD.X(u)
-u=$.Cy
-if(typeof u!=="number")return u.g()
-if(typeof w!=="number")return H.o(w)
-u+=w
-$.Cy=u
-F.Uk($.kY,u)}},
+z+=v
+$.Cy=z
+F.Uk($.kY,z)}},
 XC:function(){var z,y,x,w,v
 if($.fD!==!0)return
 z=$.cq
@@ -5610,22 +5600,6 @@ $.TC=x}if(z==="depot"){$.mH=y
 $.uX=x}},"$1","L3",2,0,20],
 fb:[function(a){F.nT("",0)
 F.Sk("")},"$1","De",2,0,20],
-Kq:[function(a){var z,y,x,w
-if("all_add"===$.p1){z=$.X
-if(typeof z!=="number")return z.g();++z
-$.X=z}else{$.p1="all_add"
-$.X=1
-z=1}if(z<3)return
-z=$.Jy
-if(z==="store"){y=$.kB
-x=$.TC}else{y=null
-x=null}if(z==="depot"){y=$.mH
-x=$.uX}w=$.e3.p(0,$.xR)
-if(w!=null)J.kH(w,new F.Es())
-z=$.Jy
-if(z==="store"){$.kB=y
-$.TC=x}if(z==="depot"){$.mH=y
-$.uX=x}F.Sk("")},"$1","lu",2,0,20],
 X2:[function(a){var z
 if("zero"===$.p1){z=$.X
 if(typeof z!=="number")return z.g();++z
@@ -5919,7 +5893,7 @@ F.hz()
 F.DP()
 $.OR=$.N2.gGq()
 F.a7()
-F.nT("0",-1)}},
+if(!J.mG($.xH,""))F.nT("0",-1)}},
 F5:{
 "^":"r:11;",
 $2:function(a,b){$.xH=a
@@ -5929,7 +5903,7 @@ F.hz()
 F.DP()
 $.OR=$.N2.gGq()
 F.a7()
-F.nT("",0)}},
+if(!J.mG($.xH,""))F.nT("",0)}},
 cD:{
 "^":"r:11;",
 $2:function(a,b){$.xH=a
@@ -5939,17 +5913,7 @@ F.hz()
 F.DP()
 $.OR=$.N2.gGq()
 F.a7()
-if(!J.mG($.xH,"")&&!J.mG($.N2.gti(),"0"))F.nT("",0)}},
-Es:{
-"^":"r:11;",
-$2:function(a,b){$.xH=a
-$.N2=b
-$.cq=b.gPV()
-F.hz()
-F.DP()
-$.OR=$.N2.gGq()
-F.a7()
-if(!J.mG($.xH,"")&&!J.mG($.N2.gti(),"0"))F.nT("**",0)}}},1],]
+if(!J.mG($.xH,"")&&!J.mG($.N2.gti(),"0"))F.nT("",0)}}},1],]
 parseReflectionData(dart)
 J.Qc=function(a){if(typeof a=="number")return J.F.prototype
 if(typeof a=="string")return J.E.prototype
