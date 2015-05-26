@@ -88,6 +88,9 @@ body {
 #export {
   flex: 1;
 }
+#check {
+  flex: 1;
+}
 #back {
   flex: 1;
 }

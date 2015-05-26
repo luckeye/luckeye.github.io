@@ -3298,7 +3298,7 @@ Ee:{
 Qb:{
 "^":"NN;A5:max=,M:value=",
 "%":"HTMLMeterElement"},
-oU:{
+Q0:{
 "^":"Gv;",
 $isGv:1,
 "%":"Navigator"},
@@ -4065,6 +4065,8 @@ z=J.Vg(document.querySelector("#export"))
 H.J(new W.xC(0,z.Q,z.a,W.VF(F.G3()),z.b),[H.Kp(z,0)]).Y()
 z=J.Vg(document.querySelector("#label"))
 H.J(new W.xC(0,z.Q,z.a,W.VF(F.Q4()),z.b),[H.Kp(z,0)]).Y()
+z=J.Vg(document.querySelector("#check"))
+H.J(new W.xC(0,z.Q,z.a,W.VF(F.Fr()),z.b),[H.Kp(z,0)]).Y()
 z=J.Vg(document.querySelector("#back"))
 H.J(new W.xC(0,z.Q,z.a,W.VF(F.F7()),z.b),[H.Kp(z,0)]).Y()},"$0","KW",0,0,1],
 vg:function(){var z,y,x,w,v,u,t,s,r
@@ -4811,6 +4813,18 @@ if(!J.mG(b1.c,b2.c)?!0:b3)a4+=C.xB.g(C.xB.g(C.xB.g(C.xB.g(C.xB.g(";"+C.jn.X(a5)+
 J.Hj($.MG.style,"flex")
 F.cJ("export",$.MG)
 H.Go($.MG.firstChild,"$isFB").value=a}},"$1","G3",2,0,20],
+l3:[function(a){var z,y
+z={}
+if($.Y.length===1){y=$.X
+if(typeof y!=="number")return y.g();++y
+$.X=y
+if(y<3)return
+$.X=0
+z.a=""
+$.e3.aN(0,new F.oU(z))
+J.Hj($.MG.style,"flex")
+F.cJ("check",$.MG)
+H.Go($.MG.firstChild,"$isFB").value=z.a}},"$1","Fr",2,0,20],
 zW:[function(a){var z=$.X
 if(typeof z!=="number")return z.g();++z
 $.X=z
@@ -4818,7 +4832,7 @@ if(z<3)return
 $.X=0
 H.Go($.MG.firstChild,"$isFB").value=""
 z=$.Lo
-if(z==="export");else if(z==="urgent"){$.U=0
+if(z==="export");else if(z==="check");else if(z==="urgent"){$.U=0
 F.LQ($.wW,0)
 $.T5.V1(0)}else if(z==="label"){$.pc=0
 F.LQ($.rG,0)
@@ -4858,38 +4872,34 @@ x.value=z.a
 F.LQ($.rG,$.pc)}},"$1","Q4",2,0,20],
 cO:[function(a){var z,y,x,w
 z=H.BU(J.ZZ(H.Go(J.G0(a),"$isIF").textContent,1),null,null)
-y=$.xR
-if(y==null)return y.g()
-x=C.xB.g(y+".",$.xH)
-y=$.T5.NZ(0,x)
+y=J.WB(J.WB($.xR,"."),$.xH)
+x=$.T5.NZ(0,y)
 w=$.U
-if(y){y=J.aF(z,$.T5.p(0,x))
+if(x){x=J.aF(z,$.T5.p(0,y))
 if(typeof w!=="number")return w.g()
-if(typeof y!=="number")return H.o(y)
-$.U=w+y}else{if(typeof w!=="number")return w.g()
+if(typeof x!=="number")return H.o(x)
+$.U=w+x}else{if(typeof w!=="number")return w.g()
 if(typeof z!=="number")return H.o(z)
-$.U=w+z}y=J.vU(z,0)
+$.U=w+z}x=J.vU(z,0)
 w=$.T5
-if(y)w.q(0,x,z)
-else w.Rz(0,x)
+if(x)w.q(0,y,z)
+else w.Rz(0,y)
 F.LQ($.wW,$.U)
 F.Sk("")},"$1","d6",2,0,20],
 ph:function(a){var z,y,x
 if(J.rr(J.Y3($.N2))==="")return
-z=$.xR
-if(z==null)return z.g()
-y=C.xB.g(z+".",$.xH)
-z=$.S.NZ(0,y)
+z=J.WB(J.WB($.xR,"."),$.xH)
+y=$.S.NZ(0,z)
 x=$.pc
-if(z){z=J.aF(a,$.S.p(0,y))
+if(y){y=J.aF(a,$.S.p(0,z))
 if(typeof x!=="number")return x.g()
-if(typeof z!=="number")return H.o(z)
-$.pc=x+z}else{if(typeof x!=="number")return x.g()
+if(typeof y!=="number")return H.o(y)
+$.pc=x+y}else{if(typeof x!=="number")return x.g()
 if(typeof a!=="number")return H.o(a)
-$.pc=x+a}z=J.vU(a,0)
+$.pc=x+a}y=J.vU(a,0)
 x=$.S
-if(z)x.q(0,y,a)
-else x.Rz(0,y)
+if(y)x.q(0,z,a)
+else x.Rz(0,z)
 F.LQ($.rG,$.pc)},
 ob:[function(a){F.Sk("")},"$1","F7",2,0,20],
 aa:[function(a){var z,y
@@ -4974,19 +4984,15 @@ $.mH=F.pW(z.id)}else{$.mH=null
 $.uX=null
 $.Bh=null}},
 eP:function(){var z,y
-z=$.xR
-if(z!==""){if(z==null)return z.g()
-z+="."}else z=""
-y=C.xB.g(z,$.xH)
+z=!J.mG($.xR,"")?J.WB($.xR,"."):""
+y=J.WB(z,$.xH)
 J.t3($.ey.firstChild,y)
 J.Hj($.ey.style,"flex")
 F.cJ("store_area_product",$.ey)},
 N3:function(){var z,y
 $.X=0
-z=$.xR
-if(z!==""){if(z==null)return z.g()
-z+="."}else z=""
-y=C.xB.g(z,$.xH)
+z=!J.mG($.xR,"")?J.WB($.xR,"."):""
+y=J.WB(z,$.xH)
 J.t3($.AL.firstChild,y)
 J.Hj($.AL.style,"flex")
 F.cJ("depot_area_product",$.AL)},
@@ -5049,15 +5055,15 @@ t=$.vr
 r=a.parentElement
 q=t==="store"?F.Qd(r.parentElement.id):F.pW(r.parentElement.id)
 p=a.previousElementSibling
-if(p!=null){r=p.getAttribute("group_name")
-t=a.style
-if(b==null?r!=null:b!==r){J.EB(t,"rgb(255,0,0)")
-J.Ma(p.style,"rgb(255,0,0)")}else{J.EB(t,"")
+if(p!=null){t=J.mG(b,p.getAttribute("group_name"))
+r=a.style
+if(!t){J.EB(r,"rgb(255,0,0)")
+J.Ma(p.style,"rgb(255,0,0)")}else{J.EB(r,"")
 J.Ma(p.style,"")}}o=a.nextElementSibling
-if(o!=null){r=o.getAttribute("group_name")
-t=a.style
-if(b==null?r!=null:b!==r){J.Ma(t,"rgb(255,0,0)")
-J.EB(o.style,"rgb(255,0,0)")}else{J.Ma(t,"")
+if(o!=null){t=J.mG(b,o.getAttribute("group_name"))
+r=a.style
+if(!t){J.Ma(r,"rgb(255,0,0)")
+J.EB(o.style,"rgb(255,0,0)")}else{J.Ma(r,"")
 J.EB(o.style,"")}}t=a.parentElement
 if(t.previousElementSibling!=null){t.toString
 t=new W.e7(t)
@@ -5066,10 +5072,10 @@ t=a.parentElement.previousElementSibling
 t.toString
 t=new W.e7(t)
 m=t.Zv(t,n)
-r=J.Vs(m).Q.getAttribute("group_name")
-t=a.style
-if(b==null?r!=null:b!==r){J.hK(t,"rgb(255,0,0)")
-J.cR(m.style,"rgb(255,0,0)")}else{J.hK(t,"")
+t=J.mG(b,J.Vs(m).Q.getAttribute("group_name"))
+r=a.style
+if(!t){J.hK(r,"rgb(255,0,0)")
+J.cR(m.style,"rgb(255,0,0)")}else{J.hK(r,"")
 J.cR(m.style,"")}}t=a.parentElement
 if(t.nextElementSibling!=null){t.toString
 t=new W.e7(t)
@@ -5078,10 +5084,10 @@ t=a.parentElement.nextElementSibling
 t.toString
 t=new W.e7(t)
 l=t.Zv(t,n)
-r=J.Vs(l).Q.getAttribute("group_name")
-t=a.style
-if(b==null?r!=null:b!==r){J.cR(t,"rgb(255,0,0)")
-J.hK(l.style,"rgb(255,0,0)")}else{J.cR(t,"")
+t=J.mG(b,J.Vs(l).Q.getAttribute("group_name"))
+r=a.style
+if(!t){J.cR(r,"rgb(255,0,0)")
+J.hK(l.style,"rgb(255,0,0)")}else{J.cR(r,"")
 J.hK(l.style,"")}}k=x.gti()
 j=x.a
 i=w.b
@@ -5119,10 +5125,7 @@ if(typeof g!=="number")return H.o(g)
 t+=g
 $.Cy=t
 $.kY.textContent=C.CD.X(t)}},
-QU:function(){var z,y
-z=$.aE
-y=$.xR
-if((z==null?y!=null:z!==y)||!J.mG($.Io,$.xH)){if($.vr==="store"){if($.N2.gPV()!=null)F.AI($.N2.gPV(),$.xR,"")}else if($.N2.gHN()!=null)F.AI($.N2.gHN(),$.xR,"")
+QU:function(){if(!J.mG($.aE,$.xR)||!J.mG($.Io,$.xH)){if($.vr==="store"){if($.N2.gPV()!=null)F.AI($.N2.gPV(),$.xR,"")}else if($.N2.gHN()!=null)F.AI($.N2.gHN(),$.xR,"")
 F.AI($.Pl,$.xR,$.xH)}if(J.MQ($.Y).gGN()==="group_products")if($.vr==="store")F.Sk("store_area_products")
 else F.Sk("depot_area_products")},
 ni:[function(a){var z
@@ -5870,6 +5873,17 @@ if(y==="")z.b=x+"-"
 else{y=a.getAttribute("group_name")
 if(y==null)return y.g()
 z.b=x+C.xB.g(y+".",J.nJ(a.firstChild))}}},
+oU:{
+"^":"r:11;Q",
+$2:function(a,b){$.xR=a
+if(!J.mG(a,""))J.kH(b,new F.Xv(this.Q))}},
+Xv:{
+"^":"r:11;Q",
+$2:function(a,b){var z
+if(!J.mG(a,"")){$.xH=a
+$.N2=b
+if(!J.mG(a,"")&&$.N2.gPV()!=null&&!J.mG($.N2.gti(),"0")&&$.N2.gHN()==null){z=this.Q
+z.a=C.xB.g(z.a,J.WB(J.WB(J.WB($.xR,"."),$.xH),"\n"))}}}},
 Ze:{
 "^":"r:11;Q",
 $2:function(a,b){var z=this.Q
